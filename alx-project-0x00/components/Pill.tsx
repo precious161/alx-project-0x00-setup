@@ -1,13 +1,10 @@
 import React from "react";
-
-interface PillProps {
-  title: string;
-}
+import { PillProps } from "@/interfaces";
 
 const Pill: React.FC<PillProps> = ({ title }) => {
   return (
-    <div className="bg-[#f1f1f1] px-3 py-1 rounded-full text-sm font-medium">
-      {title}
+    <div className=" flex justify-center  items-center bg-[#F9F9F9] px-3 w-auto h-[27px] rounded-full">
+      <p className=" text-sm ">{title}</p>
     </div>
   );
 };
